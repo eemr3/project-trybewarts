@@ -27,7 +27,7 @@ main {
   gap: 8px;
 }
 
-.input-email, .input-password {
+.input-email , .input-password {
   height: 40px;
   border-radius: 8px;
   border: none;
@@ -94,6 +94,14 @@ main {
 
 }
 
-.position {
+.radio-button-content {
   display: flex;
+  flex-direction: column;
+  margin: 20px 15px;
+}
+
+.check-box-content {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 15px;
 }
