@@ -1,5 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .header {
   display: flex;
+  justify-content: space-between;
   background-color: rgb(50, 167, 145);
-  padding: 40px;
+  padding: 15px;
+}
+
+.trybewarts-header-logo {
+  display: flex;
+  width: 80px;
+}
+
+.form-container {
+  display: flex;
+  gap: 5px;
+}
+
+.form-container input, button{
+  height: 40px;
+  border-radius: 8px;
+  border: none;
+}
+
+.form-container button {
+  padding: 10px 50px;
 }
