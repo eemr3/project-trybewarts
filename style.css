@@ -98,10 +98,16 @@ main {
   display: flex;
   flex-direction: column;
   margin: 20px 15px;
+  width: 45%;
 }
 
 .check-box-content {
   display: flex;
   flex-direction: column;
   margin: 20px 15px;
+  width: 45%;
+}
+
+#inputsOptions {
+  display: flex;
 }
