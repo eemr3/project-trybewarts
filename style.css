@@ -6,6 +6,7 @@
 
 main {
   display: flex;
+  width: 100%;
 }
 
 .header {
@@ -26,7 +27,7 @@ main {
   gap: 8px;
 }
 
-.input-email,.input-password {
+.input-email, .input-password {
   height: 40px;
   border-radius: 8px;
   border: none;
@@ -35,7 +36,7 @@ main {
 }
 
 #btn-login {
- height: 40px;
+  height: 40px;
   border-radius: 8px;
   border: none;
   font-size: 16px;
@@ -54,4 +55,10 @@ main {
 #evaluation-form {
   display: flex;
   width: 675px;
+  flex-direction: column;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
+  margin-left: 150px;
 }
