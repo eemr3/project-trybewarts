@@ -62,3 +62,38 @@ main {
   height: 500px;
   margin-left: 150px;
 }
+
+#input-name {
+  display: flex;
+  width: 200px;
+  margin-right: 10px;
+}
+
+#input-lastname {
+  display: flex;
+  width: 200px;
+}
+
+#input-email {
+  display: flex;
+  margin-right: 10px;
+  width: 200px;
+  height: 20px;
+}
+
+#house {
+  display: flex;
+  width: 150px;
+  height: 20px;
+  margin-left: 5px;
+}
+
+.position {
+  display: flex;
+  margin: 15px 15px 5px;
+
+}
+
+.position {
+  display: flex;
+}
