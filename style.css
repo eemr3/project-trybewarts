@@ -30,3 +30,8 @@
 .form-container button {
   padding: 10px 50px;
 }
+
+#trybewarts-header-title {
+align-self: center;
+color: white;
+}
