@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+main {
+  display: flex;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -13,25 +17,41 @@
 
 .trybewarts-header-logo {
   display: flex;
-  width: 80px;
+  width: 60px;
 }
 
-.form-container {
+.trybewarts-login {
   display: flex;
-  gap: 5px;
+  align-items: center;
+  gap: 8px;
 }
 
-.form-container input, button{
+.input-email,.input-password {
   height: 40px;
   border-radius: 8px;
   border: none;
+  padding: 5px;
+  font-size: 16px;
 }
 
-.form-container button {
+#btn-login {
+ height: 40px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+}
+
+.trybewarts-login button {
   padding: 10px 50px;
 }
 
 #trybewarts-header-title {
-align-self: center;
-color: white;
+  font-size: 35px;
+  align-self: center;
+  color: white;
+}
+
+#evaluation-form {
+  display: flex;
+  width: 675px;
 }
