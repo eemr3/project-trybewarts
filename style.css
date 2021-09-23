@@ -146,3 +146,18 @@ footer {
   padding: 10px;
   cursor: pointer;
 }
+
+#counter {
+  position: absolute;
+  bottom: 23px;
+  right: 1px;
+}
+
+.section {
+  position: relative;
+  width: 450px;
+}
+
+#textarea {
+  resize: none;
+}

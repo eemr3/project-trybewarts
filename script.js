@@ -27,3 +27,14 @@ function checkedAgreement() {
 }
 checkedAgreement();
 document.querySelector('#agreement').addEventListener('click', checkedAgreement);
+
+function count() {
+  const counter = document.querySelector('#counter');
+  const textarea = document.querySelector('#textarea');
+  let number = 500;
+  let text = textarea.value;
+  counter.innerHTML = number - text.length;
+}
+
+const areatext = document.querySelector('#textarea');
+areatext.addEventListener('input', count);
