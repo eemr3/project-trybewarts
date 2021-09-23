@@ -31,8 +31,8 @@ document.querySelector('#agreement').addEventListener('click', checkedAgreement)
 function count() {
   const counter = document.querySelector('#counter');
   const textarea = document.querySelector('#textarea');
-  let number = 500;
-  let text = textarea.value;
+  const number = 500;
+  const text = textarea.value;
   counter.innerHTML = number - text.length;
 }
 
