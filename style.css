@@ -12,6 +12,16 @@ main {
   padding-top: 50px;
 }
 
+footer {
+  background-color: rgb(60, 64, 74);
+  bottom: 0;
+  color: white;
+  padding: 20px 0;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
