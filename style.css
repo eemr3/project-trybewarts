@@ -6,7 +6,10 @@
 
 main {
   display: flex;
+  justify-content: space-evenly;
   width: 100%;
+  margin: 0 auto;
+  padding-top: 50px;
 }
 
 .header {
@@ -90,24 +93,46 @@ main {
 
 .position {
   display: flex;
-  margin: 15px 15px 5px;
+  margin: 15px 0 5px;
 
 }
 
 .radio-button-content {
   display: flex;
   flex-direction: column;
-  margin: 20px 15px;
+  margin: 20px 0;
   width: 45%;
 }
 
 .check-box-content {
   display: flex;
   flex-direction: column;
-  margin: 20px 15px;
+  margin: 20px 0;
   width: 45%;
 }
 
 #inputsOptions {
   display: flex;
+}
+
+#submit-btn {
+  border-radius: 8px;
+  border: none;
+  background-color: rgb(78, 44, 131);
+  color: white;
+  font-size: 16px;
+  margin-top: 20px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+#submit-btn:disabled {
+  border-radius: 8px;
+  border: none;
+  background-color: rgb(144, 102, 211);
+  color: white;
+  font-size: 16px;
+  margin-top: 20px;
+  padding: 10px;
+  cursor: pointer;
 }

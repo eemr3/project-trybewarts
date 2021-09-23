@@ -14,3 +14,16 @@ btnLogin.addEventListener('click', (event) => {
     alert('Email ou senha inválidos.');
   }
 });
+
+function checkedAgreement() {
+  const agreementCheck = document.querySelector('#agreement');
+  const btnSend = document.querySelector('#submit-btn');
+
+  if (agreementCheck.checked) {
+    btnSend.removeAttribute('disabled');
+  } else {
+    btnSend.setAttribute('disabled', true);
+  }
+}
+checkedAgreement();
+document.querySelector('#agreement').addEventListener('click', checkedAgreement);
