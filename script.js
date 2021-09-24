@@ -38,3 +38,74 @@ function count() {
 
 const areatext = document.querySelector('#textarea');
 areatext.addEventListener('input', count);
+
+const infos = [];
+
+function getInputeSelectValues() {
+  const name = document.querySelector('#input-name');
+  const lastname = document.querySelector('#input-lastname');
+  const email = document.querySelector('#input-email');
+  const house = document.querySelector('#house');
+  infos.push(`Nome: ${name.value} ${lastname.value}`);
+  infos.push(`Email: ${email.value}`);
+  infos.push(`Casa: ${house.value}`); 
+}
+
+function getFamily() {
+  const familyValue = document.querySelectorAll('.family');
+  for (let i = 0; i < familyValue.length; i += 1) {
+    if (familyValue[i].checked){
+      infos.push(familyValue[i].value);
+    }
+  }
+}
+
+function getCheckbox() {
+  const subject = document.querySelectorAll('.subject');
+  for (let i = 0; i < subject.length; i += 1) {
+    if(subject[i].checked) {
+      infos.push(subject[i].value);
+    }
+  }
+}
+
+function getRadioRate() {
+  const rate = document.querySelectorAll('.rate');
+  for (let i = 0; i < rate.length; i += 1) {
+    if(rate[i].checked) {
+      infos.push(rate[i].value);
+    }
+  }
+}
+
+function getTextarea() {
+  const text = document.querySelector('#textarea');
+  infos.push(text.value);
+}
+
+function printData() {
+  const form = document.querySelector('#evaluation-form');
+  const ulList = document.createElement('ul');
+  getInputeSelectValues();
+  form.innerHTML = '';
+  form.appendChild(ulList);
+
+  for (let key in infos) {
+    const listItens = document.createElement('li');
+    listItens.innerHTML = infos[key];
+    ulList.appendChild(listItens);
+    
+  }
+}
+
+const btnSend = document.querySelector('#submit-btn');
+btnSend.addEventListener('click', (event) => {
+  event.preventDefault();
+  //  getInputeSelectValues();
+  //  getFamily();
+  //  getCheckbox();
+  //  getRadioRate();
+  //  getTextarea();
+  printData();
+  //  console.log(infos);
+});

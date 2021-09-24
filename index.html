@@ -25,13 +25,13 @@
       <form id="evaluation-form">
         <h1>Formulário de Avalição</h1>
         <div class="position">
-          <input type="text" id="input-name" placeholder="Nome">
-          <input type="text" id="input-lastname" placeholder="Sobrenome">
+          <input type="text" id="input-name" class="pessoal-values" placeholder="Nome">
+          <input type="text" id="input-lastname" class="pessoal-values" placeholder="Sobrenome">
         </div>
         <div class="position">
-          <input type="email" id="input-email" placeholder="Email">
+          <input type="email" id="input-email" class="pessoal-values" placeholder="Email">
           <label for="house">Casa:</label>
-          <select id="house">
+          <select id="house" class="pessoal-values">
           <option value="Gitnória"  id="gitnoria-house">Gitnória</option>
           <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
           <option value="Corvinode" id="corvinode-house">Corvinode</option>
@@ -44,15 +44,15 @@
           <div class="radio-button-content">
             <label for="" id="label-family">Qual sua família?</label>
             <label for="">
-              <input type="radio" name="family" value="Frontend">
+              <input type="radio" name="family" value="Frontend" class="family">
               Frontend
             </label>
             <label for="">
-              <input type="radio" name="family" value="Backend">
+              <input type="radio" name="family" value="Backend" class="family">
               Backend
             </label>
             <label for="">
-              <input type="radio" name="family" value="FullStack">
+              <input type="radio" name="family" value="FullStack" class="family">
               FullStack
             </label>
             
@@ -61,29 +61,29 @@
             <label id="label-content" for="">Qual conteúdo você está com mais vontade de aprender?</label>
             <div>
               <label for="">
-                <input type="checkbox" value="HoFs">  
+                <input class="subject" type="checkbox" value="HoFs">  
                 HoFs
               </label>
               <label for="">
-                <input type="checkbox" value="Jest">
+                <input class="subject" type="checkbox" value="Jest">
                 Jest
               </label>
               <label for="">
-                <input type="checkbox" value="Promises">
+                <input class="subject" type="checkbox" value="Promises">
                 Promises
               </label>
             </div>
             <div>
               <label for="">
-                <input type="checkbox" value="React">
+                <input class="subject" type="checkbox" value="React">
                 React
               </label>
               <label for="">
-                <input type="checkbox" value="SQL">
+                <input class="subject" type="checkbox" value="SQL">
                 SQL
               </label>
               <label for="">
-                <input type="checkbox" value="Python">
+                <input class="subject" type="checkbox" value="Python">
                 Python
               </label>
             </div>
@@ -94,16 +94,16 @@
       <br>
       <section>
         <label id="label-rate" for="">Como você avalia a Trybewarts?</label>
-        <label for=""><input type="radio" name="rate" value="1" >1</label>
-        <label for=""><input type="radio" name="rate" value="2" >2</label>
-        <label for=""><input type="radio" name="rate" value="3" >3</label>
-        <label for=""><input type="radio" name="rate" value="4" >4</label>
-        <label for=""><input type="radio" name="rate" value="5" >5</label>
-        <label for=""><input type="radio" name="rate" value="6" >6</label>
-        <label for=""><input type="radio" name="rate" value="7" >7</label>
-        <label for=""><input type="radio" name="rate" value="8" >8</label>
-        <label for=""><input type="radio" name="rate" value="9" >9</label>
-        <label for=""><input type="radio" name="rate" value="10" >10</label>
+        <label for=""><input type="radio" name="rate" value="1" class="rate">1</label>
+        <label for=""><input type="radio" name="rate" value="2" class="rate">2</label>
+        <label for=""><input type="radio" name="rate" value="3" class="rate">3</label>
+        <label for=""><input type="radio" name="rate" value="4" class="rate">4</label>
+        <label for=""><input type="radio" name="rate" value="5" class="rate">5</label>
+        <label for=""><input type="radio" name="rate" value="6" class="rate">6</label>
+        <label for=""><input type="radio" name="rate" value="7" class="rate">7</label>
+        <label for=""><input type="radio" name="rate" value="8" class="rate">8</label>
+        <label for=""><input type="radio" name="rate" value="9" class="rate">9</label>
+        <label for=""><input type="radio" name="rate" value="10" class="rate">10</label>
       </section>
       <br>
       <section class="section">
