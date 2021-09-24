@@ -40,7 +40,8 @@ footer {
   gap: 8px;
 }
 
-.input-email , .input-password {
+.input-email,
+.input-password {
   height: 40px;
   border-radius: 8px;
   border: none;
@@ -104,7 +105,25 @@ footer {
 .position {
   display: flex;
   margin: 15px 0 5px;
+}
 
+.pessoal-values {
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+  background-color: rgb(223, 223, 223);
+}
+
+#input-email {
+  padding: 15px;
+}
+
+#house {
+  padding: 15px;
+}
+
+.rate {
+  margin-left: 10px;
 }
 
 .radio-button-content {
@@ -119,8 +138,15 @@ footer {
   flex-direction: column;
   margin: 20px 0;
   width: 45%;
+  gap: 10px;
 }
 
+.family {
+  margin: 5px 0 10px 0;
+}
+.subject {
+  margin-left: 10px;
+}
 #inputsOptions {
   display: flex;
 }

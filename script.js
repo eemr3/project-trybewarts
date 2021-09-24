@@ -1,9 +1,5 @@
 const btnLogin = document.querySelector('#btn-login');
 
-/* o preencher o formulário e clicar no botão, será validado que:
-Caso o email seja "tryber@teste.com" e a senha seja "123456" será emitido um alerta contendo o texto "Olá, Tryber!"
-Em todos os outro casos deverá ser emitido um alerta contendo o texto "Email ou senha inválidos." */
-
 btnLogin.addEventListener('click', (event) => {
   event.preventDefault();
   const inputEmail = document.querySelector('.input-email');
@@ -53,9 +49,9 @@ function getInputeSelectValues() {
 
 function getFamily() {
   const familyValue = document.querySelectorAll('.family');
-  for (let i = 0; i < familyValue.length; i += 1) {
-    if (familyValue[i].checked) {
-      infos.push(`Família: ${familyValue[i].value}`);
+  for (let index = 0; index < familyValue.length; index += 1) {
+    if (familyValue[index].checked) {
+      infos.push(`Família: ${familyValue[index].value}`);
     }
   }
 }
@@ -63,9 +59,9 @@ function getFamily() {
 function getCheckbox() {
   const subject = document.querySelectorAll('.subject');
   let dataValue = '';
-  for (let i = 0; i < subject.length; i += 1) {
-    if (subject[i].checked) {
-      dataValue += `${subject[i].value}, `;
+  for (let index = 0; index < subject.length; index += 1) {
+    if (subject[index].checked) {
+      dataValue += `${subject[index].value}, `;
     }
   }
 
@@ -74,9 +70,9 @@ function getCheckbox() {
 
 function getRadioRate() {
   const rate = document.querySelectorAll('.rate');
-  for (let i = 0; i < rate.length; i += 1) {
-    if (rate[i].checked) {
-      infos.push(`Avaliação: ${rate[i].value}`);
+  for (let index = 0; index < rate.length; index += 1) {
+    if (rate[index].checked) {
+      infos.push(`Avaliação: ${rate[index].value}`);
     }
   }
 }
