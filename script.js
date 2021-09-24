@@ -48,64 +48,65 @@ function getInputeSelectValues() {
   const house = document.querySelector('#house');
   infos.push(`Nome: ${name.value} ${lastname.value}`);
   infos.push(`Email: ${email.value}`);
-  infos.push(`Casa: ${house.value}`); 
+  infos.push(`Casa: ${house.value}`);
 }
 
 function getFamily() {
   const familyValue = document.querySelectorAll('.family');
   for (let i = 0; i < familyValue.length; i += 1) {
-    if (familyValue[i].checked){
-      infos.push(familyValue[i].value);
+    if (familyValue[i].checked) {
+      infos.push(`Família: ${familyValue[i].value}`);
     }
   }
 }
 
 function getCheckbox() {
   const subject = document.querySelectorAll('.subject');
+  let dataValue = '';
   for (let i = 0; i < subject.length; i += 1) {
-    if(subject[i].checked) {
-      infos.push(subject[i].value);
+    if (subject[i].checked) {
+      dataValue += `${subject[i].value}, `;
     }
   }
+
+  infos.push(`Matérias: ${dataValue}`);
 }
 
 function getRadioRate() {
   const rate = document.querySelectorAll('.rate');
   for (let i = 0; i < rate.length; i += 1) {
-    if(rate[i].checked) {
-      infos.push(rate[i].value);
+    if (rate[i].checked) {
+      infos.push(`Avaliação: ${rate[i].value}`);
     }
   }
 }
 
 function getTextarea() {
   const text = document.querySelector('#textarea');
-  infos.push(text.value);
+  infos.push(`Observações: ${text.value}`);
 }
 
 function printData() {
   const form = document.querySelector('#evaluation-form');
   const ulList = document.createElement('ul');
   getInputeSelectValues();
+  getFamily();
+  getCheckbox();
+  getRadioRate();
+  getTextarea();
+
   form.innerHTML = '';
   form.appendChild(ulList);
 
-  for (let key in infos) {
+  for (let index = 0; index < infos.length; index += 1) {
     const listItens = document.createElement('li');
-    listItens.innerHTML = infos[key];
+    listItens.innerHTML = infos[index];
     ulList.appendChild(listItens);
-    
   }
 }
 
 const btnSend = document.querySelector('#submit-btn');
 btnSend.addEventListener('click', (event) => {
   event.preventDefault();
-  //  getInputeSelectValues();
-  //  getFamily();
-  //  getCheckbox();
-  //  getRadioRate();
-  //  getTextarea();
   printData();
-  //  console.log(infos);
 });
