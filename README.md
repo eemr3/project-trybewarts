@@ -28,7 +28,8 @@ ___
 
 ## :information_source: Sobre
 
-Project Trybewarts
+Project Trybewarts. Este projeto foi realizado em dupla. 
+Lucas Lima e Emerson Moreira 
 
 ## :interrobang: Motivo
 
